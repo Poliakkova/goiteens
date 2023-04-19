@@ -1,0 +1,7 @@
+game.Players.PlayerAdded:Connect(function(plr) -- функція, що викликається, коли додається новий гравець
+	local f = Instance.new("Folder", plr) -- створюємо у грі папку для статистики
+	f.Name = "leaderstats" -- називаємо її leaderstats
+	local coins = Instance.new("IntValue", f) -- створюємо обʼєкт IntValue, де буде сума монет
+	coins.Name = "Coins" -- називаємо його Coins
+	coins.Value = 0 -- вказуємо, що на початку кількість монет = 0
+end)
